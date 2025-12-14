@@ -1,6 +1,7 @@
 import { Typewriter } from 'react-simple-typewriter';
 import GatewayColoringImg from "../assets/img/GatewayImg/GatewayColoring.png";
 import LANLImg from "../assets/img/LANL/LANL_3.png";
+import TDEImg from "../assets/img/TDE/TDE_Cover_Photos.png";
 import ProjectCard from './ProjectCard';
 
 export const Home = () => {
@@ -63,8 +64,8 @@ export const Home = () => {
                     description="A data-driven astrophysics research project focused on identifying and analyzing Tidal Disruption Events (TDEs) using data from the Zwicky Transient Facility (ZTF). 
                     The project employs machine learning techniques and statistical analysis to detect TDE signatures, contributing to our understanding of black hole physics and stellar dynamics."
                     tags={['Data Visualization', 'Python', 'Pandas', 'FastAPI', 'UI/UX Design', 'Physics', 'ML']}
-                    img="https://via.placeholder.com/300"
-                    link="#"
+                    img= {TDEImg}
+                    link="/TDE"
                 />
 
             </section>

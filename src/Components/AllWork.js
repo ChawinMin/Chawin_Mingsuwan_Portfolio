@@ -2,6 +2,7 @@ import ProjectCard from "./ProjectCard"
 import GatewayColoringImg from "../assets/img/GatewayImg/GatewayColoring.png";
 import LANLImg from "../assets/img/LANL/LANL_3.png";
 import APLImg from "../assets/img/APL/APLLogo.png";
+import TDEImg from "../assets/img/TDE/TDE_Cover_Photos.png";
 
 export const AllWork = () => {
     return (
@@ -53,8 +54,8 @@ export const AllWork = () => {
                     description="A data-driven astrophysics research project focused on identifying and analyzing Tidal Disruption Events (TDEs) using data from the Zwicky Transient Facility (ZTF). 
                     The project employs machine learning techniques and statistical analysis to detect TDE signatures, contributing to our understanding of black hole physics and stellar dynamics."
                     tags={['Data Visualization', 'Python', 'Pandas', 'FastAPI', 'UI/UX Design', 'Physics', 'ML']}
-                    img="https://via.placeholder.com/300"
-                    link="#"
+                    img= {TDEImg}
+                    link="/TDE"
                 />
                 {/*Virtual Reality Study Hub*/}
                 <ProjectCard

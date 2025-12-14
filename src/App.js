@@ -6,6 +6,7 @@ import { AllWork } from './Components/AllWork';
 import { Gateway } from './Components/Projects/Gateway';
 import { LANL } from './Components/Projects/LANL';
 import { APL } from './Components/Projects/APL';
+import { TDE } from './Components/Projects/TDE';
 import UpScroll from './Components/UpScroll';
 import { Footer } from './Components/Footer';
 import { Routes, Route } from 'react-router-dom';
@@ -25,6 +26,7 @@ function App() {
         <Route path="/Gateway" element={<Gateway />} />
         <Route path="/APL" element={<APL />} />
         <Route path="/LANL" element={<LANL />} />
+        <Route path="/TDE" element={<TDE />} />
       </Routes>
 
       <UpScroll showAfter={50} />

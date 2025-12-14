@@ -27,10 +27,17 @@
 html, body, #root{
   height: 100%;
   width: 100%;
-  background-color: #121212;
+  background-color: #000000;
+  color: #fff;
+}
+html, body{
+  background-color: #000000;
+  color: #fff;
 }
 
 :root{
+  color-scheme: dark;
+  --accent-gold: #d4b45f;
   --nav-height: 120px;
 }
 
@@ -40,11 +47,12 @@ html{
 }
 
 body{
+  margin: 0;
   font-weight: 400;
   overflow-x: hidden;
   position: relative;
-  background-color: #121212 !important;
-  color: #fff !important;
+  background-color: #000000!important;
+  color: white !important;
   font-family: "Central", sans-serif !important;
 }
 
@@ -55,7 +63,7 @@ h1, h2, h3, h4, h5, h6{
 }
 
 nav.navbar{
-  background-color: #121212;
+  background-color: #1a1c1c;
   padding: 18px 0;
   position: fixed;
   width: 100%;
@@ -236,7 +244,7 @@ nav.navbar .brand-subtitle{
   display: grid;
   grid-template-columns: 1.1fr 0.9fr;
   gap: 32px;
-  background: #2a2f31;
+  background: #2a2d2e;
   border-radius: 28px;
   padding: 40px;
   margin-top: 52px;
@@ -303,7 +311,7 @@ nav.navbar .brand-subtitle{
   font-size: 13px;
   padding: 6px 12px;
   border-radius: 999px;
-  background: rgba(255, 255, 255, 0.08);
+  background: rgba(218, 165, 32, 0.5);
 }
 
 /* Link */
@@ -353,6 +361,7 @@ nav.navbar .brand-subtitle{
   text-align: center;
 }
 .footer-right {
+  padding-right: 42px;
   display: flex;
   align-items: left;
 }
@@ -752,6 +761,43 @@ nav.navbar .brand-subtitle{
   transform: translateY(-2px);
 }
 
+/*TDE Page*/
+.Candidates-title{
+  text-align: center;
+  color: goldenrod;
+  font-size: 28px;
+  font-weight: 600;
+  margin-top: 40px;
+  margin-bottom: 16px;
+}
+.tde-images{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+.tde-image{
+  width: 100%;
+  max-width: 900px;
+  height: 600px;
+  border-radius: 18px;
+  align-items: center;
+  object-fit: cover;
+  transition: transform 0.3s ease-in-out;
+}
+.tde-image:hover{
+  transform: scale(1.02);
+}
+@media (max-width: 900px) {
+  .tde-image {
+    width: 100%;
+    max-width: 500px;
+    height: 360px;
+  }
+}
+
 
 /*for subtitles use section-subtitle, title section-title, 
 smaller header skills-title, paragraph project-overview*/
@@ -772,10 +818,17 @@ smaller header skills-title, paragraph project-overview*/
   margin-top: 20px;
   text-align: left;
 }
+.sub-skills-title{
+  color: goldenrod;
+  font-size: 22px;
+  font-weight: 500;
+  margin-top: 14px;
+  margin-bottom: 16px;
+}
 
 .App {
   text-align: center;
-  background-color: #121212;
+  background-color: #000000;
   color: #ffffff;
   min-height: 100vh;
   padding-top: calc(var(--nav-height) + 50px);
