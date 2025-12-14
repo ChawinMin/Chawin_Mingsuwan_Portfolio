@@ -3,6 +3,9 @@ import GatewayColoringImg from "../assets/img/GatewayImg/GatewayColoring.png";
 import LANLImg from "../assets/img/LANL/LANL_3.png";
 import APLImg from "../assets/img/APL/APLLogo.png";
 import TDEImg from "../assets/img/TDE/TDE_Cover_Photos.png";
+import VRStudyHubImg from "../assets/img/VRStudyHub/VRStudyHub_2.png"
+import IlenderImg from "../assets/img/Ilender/IlenderImg1.png";
+import UFOImg from "../assets/img/UFO/UFOimg2.png";
 
 export const AllWork = () => {
     return (
@@ -63,9 +66,9 @@ export const AllWork = () => {
                     badge="Educational Technology"
                     title="Immersive Learning Environment in VR"
                     description="An immersive learning environment developed in VR for educational purposes. The project explores how virtual reality can enhance student engagement and comprehension in complex subjects, particularly in STEM fields."
-                    tags={['VR', 'Unity', 'C#', 'Educational Technology', 'UI/UX Design']}
-                    img="https://via.placeholder.com/300"
-                    link="#"
+                    tags={['VR', 'Unity', 'C#', 'Educational Technology', 'UI/UX Design', 'Human-Computer Interaction']}
+                    img= {VRStudyHubImg}
+                    link="/VRStudyHub"
                 />
                 {/*Ilender Internship*/}
                 <ProjectCard
@@ -74,8 +77,8 @@ export const AllWork = () => {
                     title="Enhancing data processing pipelines"
                     description="A software engineering internship focused on enhancing data processing pipelines for improved efficiency and reliability. The project involved developing and optimizing algorithms to handle large datasets, contributing to the overall performance of the company's data infrastructure."
                     tags={['Python', 'Data Processing', 'Software Engineering', 'ML']}
-                    img="https://via.placeholder.com/300"
-                    link="#"
+                    img= {IlenderImg}
+                    link="/Ilender"
                 />
                 {/*UFO Sightings Data Visualization*/}
                 <ProjectCard
@@ -84,8 +87,8 @@ export const AllWork = () => {
                     title="Interactive Visualization of UFO Sightings"
                     description="An interactive visualization project for UFO sightings data. The project explores how data visualization can be used to analyze and present UFO sighting reports, contributing to our understanding of patterns and trends in reported phenomena."
                     tags={['Data Visualization', 'Python', 'Pandas', 'UI/UX Design']}
-                    img="https://via.placeholder.com/300"
-                    link="#"
+                    img= {UFOImg}
+                    link="/UFO"
                 />
                 {/*Rortos*/}
                 <ProjectCard

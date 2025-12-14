@@ -7,6 +7,9 @@ import { Gateway } from './Components/Projects/Gateway';
 import { LANL } from './Components/Projects/LANL';
 import { APL } from './Components/Projects/APL';
 import { TDE } from './Components/Projects/TDE';
+import { VRStudyHub } from './Components/Projects/VRStudyHub';
+import { Ilender } from './Components/Projects/Ilender';
+import { UFO } from './Components/Projects/UFO';
 import UpScroll from './Components/UpScroll';
 import { Footer } from './Components/Footer';
 import { Routes, Route } from 'react-router-dom';
@@ -27,6 +30,9 @@ function App() {
         <Route path="/APL" element={<APL />} />
         <Route path="/LANL" element={<LANL />} />
         <Route path="/TDE" element={<TDE />} />
+        <Route path="/VRStudyHub" element={<VRStudyHub />} />
+        <Route path="/Ilender" element={<Ilender />} />
+        <Route path="/UFO" element={<UFO />} />
       </Routes>
 
       <UpScroll showAfter={50} />

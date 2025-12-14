@@ -250,6 +250,7 @@ nav.navbar .brand-subtitle{
   margin-top: 52px;
   margin-right: 60px;
   margin-left: 60px;
+  margin-bottom: 52px;
   box-shadow: 0 30px 80px rgba(0, 0, 0, 0.35);
 }
 
@@ -798,6 +799,82 @@ nav.navbar .brand-subtitle{
   }
 }
 
+/*VR Study Hub Page*/
+.video-section{
+  display: flex;
+  flex-direction: flex;
+  gap: 24px;
+  margin-top: 20px;
+}
+
+/* Ilender Page */
+.image-center{
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+.ilender-logo-img{
+  align-items: center;
+  width: 820px;
+  height: 290px;
+  border-radius: 18px;
+  object-fit: cover;
+  transition: transform 0.3s ease-in-out;
+}
+.ilender-logo-img:hover{
+  transform: scale(1.02);
+}
+
+/*UFO Page*/
+.UFO-image{
+  width: 100%;
+  max-width: 900px;
+  height: 500px;
+  border-radius: 18px;
+  align-items: center;
+  object-fit: cover;
+  transition: transform 0.3s ease-in-out;
+}
+.UFO-image:hover{
+  transform: scale(1.02);
+}
+.UFO-links{
+  display: inline-block;
+  margin-right: 20px;
+  font-size: 16px;
+  color: #6ea8ff;
+  text-decoration: none;
+}
+.UFO-links:hover {
+  text-decoration: underline;
+}
+.animation-video{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 50px;
+  width: 100%;
+  height: 100%;
+  max-height: 1200px;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding-bottom: 30px;
+}
+.youtube-video{
+  width: 100%;
+  height: 100%;
+  max-height: 600px;
+  border-radius: 18px;
+}
+.media-box{
+  border-radius: 18px;
+  overflow: hidden;
+}
+.map-image{
+  width: 100%;
+  height: 100%;
+  border-radius: 18px;
+}
+
 
 /*for subtitles use section-subtitle, title section-title, 
 smaller header skills-title, paragraph project-overview*/
@@ -824,6 +901,21 @@ smaller header skills-title, paragraph project-overview*/
   font-weight: 500;
   margin-top: 14px;
   margin-bottom: 16px;
+}
+.text-image-next-to-each-other{
+  display: flex;
+  gap: 40px;
+  align-items: center;
+  margin-top: 20px;
+}
+.text-image-next-to-each-other > * {
+  min-width: 0;
+}
+.text-image-next-to-each-other img{
+  width: 100%;
+  height: auto;
+  border-radius: 18px;
+  object-fit: cover;
 }
 
 .App {
