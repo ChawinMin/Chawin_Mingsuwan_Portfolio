@@ -1,4 +1,6 @@
 import { Typewriter } from 'react-simple-typewriter';
+import GatewayColoringImg from "../assets/img/GatewayImg/GatewayColoring.png";
+import LANLImg from "../assets/img/LANL/LANL_3.png";
 import ProjectCard from './ProjectCard';
 
 export const Home = () => {
@@ -39,8 +41,8 @@ export const Home = () => {
                     description="An immersive XR application developed in collaboration with NASA and Barrios Technology to support mission planning and systems understanding for the Lunar Gateway. The tool enables users to explore complex spacecraft modules, 
                     spatial relationships, and mission data in a fully interactive 3D environment, enhancing situational awareness and collaborative decision-making."
                     tags={['VR', 'Unreal Engine', 'Blueprints', 'C++', 'Data Visualization', 'Human-Computer Interaction', 'UI/UX Design']}
-                    img="https://via.placeholder.com/300"
-                    link="#"
+                    img={GatewayColoringImg}
+                    link="/Gateway"
                 />
                 {/*Los Alamos National Lab*/}
                 <ProjectCard
@@ -50,8 +52,8 @@ export const Home = () => {
                     description="A human-centered XR research project at Los Alamos National Laboratory exploring spatial data interaction on Apple Vision Pro. 
                     The work investigates how immersive interfaces and natural interaction techniques can improve data comprehension, analysis, and decision-making in complex scientific and engineering contexts."
                     tags={['VR', 'Apple Vision Pro', 'Unreal Engine', 'Blueprints','C++', 'Human-Computer Interaction', 'UI/UX Design']}
-                    img="https://via.placeholder.com/300"
-                    link="#"
+                    img= {LANLImg}
+                    link="/LANL"
                 />
                 {/*TDE*/}
                 <ProjectCard
