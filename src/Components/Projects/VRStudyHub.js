@@ -15,14 +15,14 @@ export const VRStudyHub = () => {
                 <h1 className="section-title">VR Study Hub</h1>
 
                 <p className="project-overview">
-                    The VR Study Hub is an immersive virtual reality application 
-                    designed to create an engaging and interactive learning environment. 
-                    Developed using Unity and C#, this project explores how 
+                    The VR Study Hub is an <strong>immersive virtual reality application 
+                    designed to create an engaging and interactive learning environment.</strong> 
+                    Developed using <strong>Unity and C#</strong>, this project explores how 
                     VR technology can enhance student engagement and comprehension 
                     in complex subjects, particularly in STEM fields. 
-                    The VR Study Hub offers a variety of educational modules, 
+                    The VR Study Hub offers a variety of <strong>educational modules, 
                     interactive simulations, and collaborative study spaces to 
-                    facilitate effective learning experiences.
+                    facilitate effective learning experiences.</strong>
                 </p>
 
                 <h3 className = 'skills-title'>Key Features</h3>
@@ -42,9 +42,9 @@ export const VRStudyHub = () => {
                         <img src={VRStudyHubImg1} alt="VR Study Hub Screenshot" className="project-image"/>
                         <p className='project-overview'>
                             For one of my projects, I worked on developing a Virtual Reality Study Hub 
-                            using Unity and the XR Rig, typically used in gaming and entertainment. 
-                            We created a fully interactive virtual environment designed to enhance 
-                            study experiences, offering an immersive way to organize and focus on tasks. 
+                            using <strong>Unity and the XR Rig,</strong> typically used in gaming and entertainment. 
+                            We created a <strong>fully interactive virtual environment designed to enhance 
+                            study experiences</strong>, offering an immersive way to organize and focus on tasks. 
                             Our team conducted tests with different individuals to gather feedback and 
                             improve the experience. We presented our finalized prototype to our TECH 120 
                             class, where our <strong>instructor was highly impressed</strong> with how we adapted this 

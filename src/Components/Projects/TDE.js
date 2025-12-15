@@ -22,7 +22,7 @@ export const TDE = () => {
                         <h2 className = 'skills-title'>What Are TDEs?</h2>
 
                         <p className = 'project-overview'>
-                        Tidal Disruption Events occur when a star ventures too close to a supermassive black hole and is torn apart by the black hole's immense gravitational forces. 
+                        Tidal Disruption Events occur when a star ventures too close to a <strong>supermassive black hole</strong> and is torn apart by the <strong>black hole's immense gravitational forces</strong>. 
                         The resulting accretion of stellar debris onto the black hole produces a luminous flare that can be observed across multiple wavelengths, 
                         providing valuable insights into black hole properties and the dynamics of stellar interactions in galactic centers. TDEs typically follow a <strong>t<sup>-5/3</sup></strong> decay in brightness over time, 
                         making their identification in transient surveys like ZTF crucial for advancing our understanding of these rare and energetic phenomena.
@@ -43,10 +43,10 @@ export const TDE = () => {
                             In addition to the backend filtering pipeline, I designed and implemented an interactive
                             visualization interface using <strong>React</strong> to support rapid inspection and
                             decision-making across hundreds of candidate transients, with a{" "}
-                            <strong>Python-based backend</strong> handling data ingestion, filtering, machine learning
-                            scoring, and API queries that connect directly to the frontend. The UI emphasizes a clear
-                            visual hierarchy—highlighting light-curve shape, peak luminosity, decay behavior, and filter
-                            pass/fail status—to reduce cognitive load during manual review. By combining machine learning
+                            <strong>Python-based backend</strong> handling <strong>data ingestion, filtering, machine learning
+                            scoring, and API queries that connect directly to the frontend.</strong> The UI emphasizes a clear
+                            visual <strong>hierarchy—highlighting light-curve shape, peak luminosity, decay behavior, and filter
+                            pass/fail status—to reduce cognitive load during manual review.</strong> By combining machine learning
                             scores with interpretable visual diagnostics, the interface bridges automated classification
                             and human judgment, enabling researchers to quickly identify promising TDE candidates while
                             understanding why a source passed or failed specific filters. This human-centered design

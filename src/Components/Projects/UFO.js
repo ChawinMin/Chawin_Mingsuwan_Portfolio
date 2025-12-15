@@ -10,13 +10,13 @@ export const UFO = () => {
                 <p className="section-subtitle">Data Visualization Project</p>
                 <h1 className="section-title">UFO Sightings Data Visualization</h1>
                 <p className="project-overview">
-                    This project involves the analysis and visualization of 
-                    UFO sightings data collected from various sources. The goal 
+                    This project involves the <strong>analysis and visualization of 
+                    UFO sightings</strong> data collected from various sources. The goal 
                     is to identify patterns and trends in the sightings, such as 
                     geographical distribution, time of occurrence, and 
-                    common characteristics reported by witnesses. Using tools like 
-                    Python, Pandas, and Matplotlib, I created interactive 
-                    visualizations that allow users to explore the data and 
+                    common characteristics reported by witnesses. Using tools like  
+                    <strong> Python, Pandas, selium, and Matplotlib.</strong> I created <strong>interactive 
+                    visualizations</strong> that allow users to explore the data and 
                     gain insights into UFO phenomena.
                 </p>
 

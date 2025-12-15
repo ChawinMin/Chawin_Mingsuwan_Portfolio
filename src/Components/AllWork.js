@@ -6,6 +6,9 @@ import TDEImg from "../assets/img/TDE/TDE_Cover_Photos.png";
 import VRStudyHubImg from "../assets/img/VRStudyHub/VRStudyHub_2.png"
 import IlenderImg from "../assets/img/Ilender/IlenderImg1.png";
 import UFOImg from "../assets/img/UFO/UFOimg2.png";
+import CullImg from "../assets/img/Cults of the Carven/RortoImg1.png";
+import LSPACEImg from "../assets/img/LSPACE/LSPACEImg1.png";
+import MinecraftImg from "../assets/img/Minecraft/MinecraftImg.jpg";
 
 export const AllWork = () => {
     return (
@@ -90,16 +93,6 @@ export const AllWork = () => {
                     img= {UFOImg}
                     link="/UFO"
                 />
-                {/*Rortos*/}
-                <ProjectCard
-                    miniTitle="Rortos"
-                    badge="Game Development Personal Project"
-                    title="Quest to Save the Kingdom"
-                    description="A fantasy adventure game developed as a personal project. The game features immersive storytelling, engaging gameplay mechanics, and rich world-building, showcasing skills in game design and development."
-                    tags={['Unreal Engine', 'Blueprints', 'C++', 'Game Design', 'Sound Design','Level Design','UI/UX Design']}
-                    img="https://via.placeholder.com/300"
-                    link="#"
-                />
                 {/*Cults of the Carvenal*/}
                 <ProjectCard
                     miniTitle="Cults of the Carven"
@@ -107,18 +100,19 @@ export const AllWork = () => {
                     title="A dark, horror RPG Experience"
                     description="A dark horror RPG game developed as a personal project. The game combines atmospheric storytelling, challenging gameplay, and immersive environments to create a compelling horror experience."
                     tags={['Unreal Engine', 'Blueprints', 'C++', 'Game Design', 'Sound Design','Level Design','UI/UX Design']}
-                    img="https://via.placeholder.com/300"
-                    link="#"
+                    img={CullImg}
+                    link="/Cull"
                 />
                 {/*NASA L'SPACE MCA*/}
                 <ProjectCard
                     miniTitle="Mission Concept Academy"
                     badge="NASA L'SPACE"
                     title="Designing a conceptual Lunar Rover Mission to explore Tycho Crater."
-                    description=""
+                    description="NASA L'SPACE is a competitive, NASA-sponsored academy designed for university students interested in gaining real-world experience in space exploration and project management. 
+                    Participants work in teams to solve real NASA challenges, learn about NASA's processes, and develop skills in leadership, collaboration, and innovation. It's a hands-on opportunity to engage in mission-related projects and prepare for careers in the space industry."
                     tags={['Mission Design', 'Computer Engineering', 'Leadership', 'Multi-disciplinary Collaboration','Lunar Exploration', 'Systems Engineering']}
-                    img="https://via.placeholder.com/300"
-                    link="#"
+                    img={LSPACEImg}
+                    link="/LSPACE"
                 />
                 {/*Minecraft Mechanical Engineering Educational Mod*/}
                 <ProjectCard
@@ -128,8 +122,8 @@ export const AllWork = () => {
                     description="A Minecraft mod developed to teach principles of statics and mechanical engineering. The mod provides an interactive platform for students to explore engineering concepts through gameplay, enhancing learning outcomes in STEM education. 
                     This project was developed as part of a First-Time Engineering Research Fellowship and was presented at the 2024 Spring Research Symposium."
                     tags={['Java', 'Quality & Assurance','Minecraft Modding', 'Mechanical Engineering', 'Educational Technology', 'UI/UX Design']}
-                    img="https://via.placeholder.com/300"
-                    link="#"
+                    img= {MinecraftImg}
+                    link="/Minecraft"
                 />
             </section>
         </>

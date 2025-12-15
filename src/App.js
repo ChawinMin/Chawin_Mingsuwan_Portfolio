@@ -10,6 +10,9 @@ import { TDE } from './Components/Projects/TDE';
 import { VRStudyHub } from './Components/Projects/VRStudyHub';
 import { Ilender } from './Components/Projects/Ilender';
 import { UFO } from './Components/Projects/UFO';
+import { Cull } from './Components/Projects/Cull';
+import { LSPACE } from './Components/Projects/LSPACE';
+import { Minecraft } from './Components/Projects/Minecraft';
 import UpScroll from './Components/UpScroll';
 import { Footer } from './Components/Footer';
 import { Routes, Route } from 'react-router-dom';
@@ -32,7 +35,10 @@ function App() {
         <Route path="/TDE" element={<TDE />} />
         <Route path="/VRStudyHub" element={<VRStudyHub />} />
         <Route path="/Ilender" element={<Ilender />} />
+        <Route path="/Cull" element={<Cull />} />
         <Route path="/UFO" element={<UFO />} />
+        <Route path="/LSPACE" element={<LSPACE />} />
+        <Route path="/Minecraft" element={<Minecraft />} />
       </Routes>
 
       <UpScroll showAfter={50} />
