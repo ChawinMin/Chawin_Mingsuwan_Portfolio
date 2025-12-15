@@ -2,8 +2,10 @@ import { useState, useEffect } from "react";
 import {Navbar, Container, Nav} from "react-bootstrap";
 import profile from "../assets/img/profile.png";
 import { Link } from "react-router-dom";
+/*import { useNavigate } from "react-router-dom";*/
 
 export const NavBar = () =>  {
+    /*const navigate = useNavigate();*/
     const [activeLink, setActiveLink] = useState('home');
     const [scrolled, setScrolled] = useState(false);
 
@@ -46,7 +48,8 @@ export const NavBar = () =>  {
                         <Nav.Link as={Link} to = "/aboutMe" className={activeLink === 'aboutMe' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('aboutMe')}>About Me</Nav.Link>
                     </Nav>
                     <span className ="navbar-text">
-                        <button className = "vvd" onClick={() => console.log('connect')}><span>Let's Connect</span></button>
+                        {/*<button className = "vvd" onClick={() => navigate('/aboutMe')}><span>Let's Connect</span></button>*/}
+                        <button className = "vvd" onClick={() => window.open('https://www.linkedin.com/in/chawinmingsuwan', '_blank')}><span>Let's Connect</span></button>
                     </span>
                 </Navbar.Collapse>
             </Container>
