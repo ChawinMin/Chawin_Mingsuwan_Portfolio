@@ -13,6 +13,7 @@ import { UFO } from './Components/Projects/UFO';
 import { Cull } from './Components/Projects/Cull';
 import { LSPACE } from './Components/Projects/LSPACE';
 import { Minecraft } from './Components/Projects/Minecraft';
+import { WildFire } from './Components/Projects/WildFire';
 import UpScroll from './Components/UpScroll';
 import { Footer } from './Components/Footer';
 import { Routes, Route } from 'react-router-dom';
@@ -39,6 +40,7 @@ function App() {
         <Route path="/UFO" element={<UFO />} />
         <Route path="/LSPACE" element={<LSPACE />} />
         <Route path="/Minecraft" element={<Minecraft />} />
+        <Route path="/WildFire" element={<WildFire />} />
       </Routes>
 
       <UpScroll showAfter={50} />

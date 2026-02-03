@@ -2,6 +2,7 @@ import TDEimg1 from "../../assets/img/TDE/TDE_Cover_Photos.png";
 import TDEimg2 from "../../assets/img/TDE/Light_Curve_1.png";
 import TDEimg3 from "../../assets/img/TDE/Light_Curve_2.png";
 import TDEimg4 from "../../assets/img/TDE/TDEinder_UI.png";  
+import TDEimg5 from "../../assets/img/TDE/TDEResearchGroupPhoto.png";
 
 export const TDE = () => {
     return (
@@ -102,6 +103,17 @@ export const TDE = () => {
                     and larger datasets are incorporated.
                 </p>
 
+                <h2 className = 'Candidates-title'>Undergraduate Research Symposium Fall 2025</h2>
+                                     
+                <div className ='project-details'>
+                    <p className = 'project-overview'>
+                        I presented this research at Purdue University's Undergraduate Research Symposium in Fall 2025.
+                        This research was mentored by <strong>Professor Danny Milisavljevic</strong> and our Graduate TA was <strong>Noah Zimmer.</strong> This Symposium provided an opportunity to share my findings with the Purdue community, receive feedback, and discuss potential future directions for the project.
+                        My fellow team members include: <strong>Medhansh Garg, Francisco Ruiz, Jason Emsley, and Jay Gannam.</strong>
+                    </p>
+                    <img src={TDEimg5} alt="TDE Research Group" className="docking-image"/>
+                </div>
+                
             </section>
         </>
     )

@@ -9,6 +9,7 @@ import UFOImg from "../assets/img/UFO/UFOimg2.png";
 import CullImg from "../assets/img/Cults of the Carven/RortoImg1.png";
 import LSPACEImg from "../assets/img/LSPACE/LSPACEImg1.png";
 import MinecraftImg from "../assets/img/Minecraft/MinecraftImg.jpg";
+import wildFireImg from "../assets/img/wildfire/Final02_img.png";
 
 export const AllWork = () => {
     return (
@@ -21,8 +22,8 @@ export const AllWork = () => {
             <section className="projects-list">
                 {/*JHU APL*/}
                 <ProjectCard
-                    miniTitle="NASA JSC Mission Control Center Immersive Visualization & AI Assistant"
-                    badge="JHU APL & IXL"
+                    miniTitle="NASA JSC Mission Control Center"
+                    badge="JHU APL Sponsor Project"
                     title="Immersive Visualization & AI Assistant for NASA JSC Mission Control"
                     description="Coming soon: Johns Hopkins Applied Physics Laboratory (JHU APL) in collaboration with IXL to develop an immersive visualization and AI assistant for NASA Johnson Space Center's Mission Control Center. 
                     The project focused on creating an interactive 3D environment that enhances situational awareness and decision-making for mission controllers, leveraging cutting-edge VR technology and AI-driven insights."
@@ -72,6 +73,20 @@ export const AllWork = () => {
                     tags={['VR', 'Unity', 'C#', 'Educational Technology', 'UI/UX Design', 'Human-Computer Interaction']}
                     img= {VRStudyHubImg}
                     link="/VRStudyHub"
+                />
+                {/*Wild Fire Scientific Visualization*/}
+                <ProjectCard
+                    miniTitle="Scientific Visualization"
+                    badge="3D Visualization"
+                    title="Wild Fire Scientific Visualization"
+                    description="A ParaView-based visualization of the LANL wildfire 
+                    dataset, showing fuel distribution, fire intensity, 
+                    smoke, and wind vectors to illustrate how the fire evolves over time.
+                    Includes contour filters for thresholding, streamlines for 
+                    flow paths, and a programmable filter for custom analysis."
+                    tags={['ParaView', 'Python']}
+                    img= {wildFireImg}
+                    link="/WildFire"
                 />
                 {/*Ilender Internship*/}
                 <ProjectCard
