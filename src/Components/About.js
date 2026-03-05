@@ -63,7 +63,8 @@ export const About = () => {
                 <div className = "about-right">
                     <h3 className = "experiences-title">Experiences</h3>
                     <ul className = "experiences-list">
-                        <li>NASA SUITS XR Developer - TEAM JARVIS (January 2026 - Present)</li>
+                        <li>NASA SUITS XR Developer - TEAM VISOR (January 2026 - Present)</li>
+                        <li>LyoHub - XR Research Intern (January 2026 - Present)</li>
                         <li>Computational Astrophysics Research Cohort (August 2025 - Present)</li>
                         <li>NASA/Barrios Technology Purdue Data Mine Corporate Partners (January 2025 - Dec 2025)</li>
                         <li>Los Alamos National Laboratory Summer Intern (June 2024 - August 2024)</li>

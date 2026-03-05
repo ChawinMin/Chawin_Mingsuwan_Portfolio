@@ -3,6 +3,7 @@ import GatewayColoringImg from "../assets/img/GatewayImg/GatewayColoring.png";
 import LANLImg from "../assets/img/LANL/LANL_3.png";
 import TDEImg from "../assets/img/TDE/TDE_Cover_Photos.png";
 import ProjectCard from './ProjectCard';
+import APLImg from "../assets/img/APL/VRAPLMCC.png";
 
 export const Home = () => {
     return (
@@ -33,12 +34,24 @@ export const Home = () => {
                 
                 {/*Marker for featured section start*/}
                 <div id="featured-start"/>
+                
+                {/*APL*/}
+                <ProjectCard
+                    miniTitle="NASA JSC Mission Control Center"
+                    badge="JHU APL Sponsor Project"
+                    title="Virtual Reality & Intelligent Agent for NASA JSC Mission Control"
+                    description="Project in Progress: Johns Hopkins Applied Physics Laboratory (JHU APL) in collaboration with IXL to develop an immersive visualization and AI assistant for NASA Johnson Space Center's Mission Control Center. 
+                    The project focuses on creating an interactive 3D environment that enhances situational awareness and decision-making for mission controllers, leveraging cutting-edge VR technology and AI-driven insights."
+                    tags={['Unity', 'VR', 'C#', 'AI Integration', 'API', 'Human-Computer Interaction', 'UI/UX Design']}
+                    img= {APLImg}
+                    link="/APL"
+                />
 
                 {/*GVT*/}
                 <ProjectCard
-                    miniTitle="Gateway Visualization Tool"
+                    miniTitle="Immersive Mission Planning"
                     badge="NASA/Barrios Technology"
-                    title="Immersive Mission Planning & Systems Visualization in XR"
+                    title="Gateway Visualization Tool"
                     description="An immersive XR application developed in collaboration with NASA and Barrios Technology to support mission planning and systems understanding for the Lunar Gateway. The tool enables users to explore complex spacecraft modules, 
                     spatial relationships, and mission data in a fully interactive 3D environment, enhancing situational awareness and collaborative decision-making."
                     tags={['VR', 'Unreal Engine', 'Blueprints', 'C++', 'Data Visualization', 'Human-Computer Interaction', 'UI/UX Design']}
@@ -49,7 +62,7 @@ export const Home = () => {
                 <ProjectCard
                     miniTitle="Human-Centered XR Research"
                     badge="Los Alamos National Laboratory"
-                    title="Immersive Data Visualization in VR"
+                    title="XR & HPC Internship"
                     description="A human-centered XR research project at Los Alamos National Laboratory exploring spatial data interaction on Apple Vision Pro. 
                     The work investigates how immersive interfaces and natural interaction techniques can improve data comprehension, analysis, and decision-making in complex scientific and engineering contexts."
                     tags={['VR', 'Apple Vision Pro', 'Unreal Engine', 'Blueprints','C++', 'Human-Computer Interaction', 'UI/UX Design']}
