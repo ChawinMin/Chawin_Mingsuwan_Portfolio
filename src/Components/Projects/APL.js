@@ -119,8 +119,8 @@ export const APL = () => {
                     </p>
 
                     <div className="LANL-media">
-                        <img src={ResearchGroupPhoto} alt="LANL Student Symposium Poster" className="XR-poster" />
-                        <iframe title="LANL Student Symposium Lightning Talk" src={APLPoster} className="lanl-slide" loading="lazy" ></iframe>
+                        <img src={ResearchGroupPhoto} alt="APL research group" className="XR-poster" />
+                        <iframe title="APL Poster" src={APLPoster} className="lanl-slide" loading="lazy" ></iframe>
                     </div>
                 </section>
             </section>
