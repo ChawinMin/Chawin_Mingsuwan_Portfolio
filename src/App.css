@@ -488,7 +488,7 @@ nav.navbar .navbar-toggler-icon:after {
 .project-card {
   display: flex;
   flex-direction: column;
-  background: var(--c-surface);
+  background: rgba(67, 67, 67, 0.8);
   /*border: 1px solid var(--c-border);*/
   border: 8px solid transparent;
   border-radius: var(--radius-lg);
