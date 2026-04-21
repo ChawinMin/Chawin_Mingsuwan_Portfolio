@@ -10,10 +10,16 @@ import CullImg from "../assets/img/Cults of the Carven/RortoImg1.png";
 import LSPACEImg from "../assets/img/LSPACE/LSPACEImg1.png";
 import MinecraftImg from "../assets/img/Minecraft/MinecraftImg.jpg";
 import wildFireImg from "../assets/img/wildfire/Final02_img.png";
+import { motion } from "framer-motion";
 
 export const AllWork = () => {
     return (
-        <>
+        <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            transition={{ duration: 0.5 }}
+        >
             <section className="all-work" id="work">
                 <p className="section-subtitle">Industry, personal, and resarch</p>
                 <h2 className="section-title">All Work</h2>
@@ -22,6 +28,7 @@ export const AllWork = () => {
             <section className="projects-list">
                 {/*JHU APL*/}
                 <ProjectCard
+                    index={0}
                     miniTitle="NASA JSC Mission Control Center"
                     badge="JHU APL Sponsor Project"
                     title="Virtual Reality & Intelligent Agent for NASA JSC Mission Control"
@@ -33,6 +40,7 @@ export const AllWork = () => {
                 />
                 {/*GVT*/}
                 <ProjectCard
+                    index={1}
                     miniTitle="Immersive Mission Planning"
                     badge="NASA/Barrios Technology"
                     title="Gateway Visualization Tool"
@@ -44,6 +52,7 @@ export const AllWork = () => {
                 />
                 {/*Los Alamos National Lab*/}
                 <ProjectCard
+                    index={2}
                     miniTitle="Human-Centered XR Research"
                     badge="Los Alamos National Laboratory"
                     title="XR & HPC Internship"
@@ -55,6 +64,7 @@ export const AllWork = () => {
                 />
                 {/*TDE*/}
                 <ProjectCard
+                    index={3}
                     miniTitle="Tidal Disruption Event"
                     badge="Astrophysics Computational Research"
                     title="Search for Tidal Disruption Events in ZTF Data"
@@ -66,6 +76,7 @@ export const AllWork = () => {
                 />
                 {/*Virtual Reality Study Hub*/}
                 <ProjectCard
+                    index={4}
                     miniTitle="Virtual Reality Study Hub"
                     badge="Educational Technology"
                     title="Immersive Learning Environment in VR"
@@ -76,6 +87,7 @@ export const AllWork = () => {
                 />
                 {/*Wild Fire Scientific Visualization*/}
                 <ProjectCard
+                    index={5}
                     miniTitle="Scientific Visualization"
                     badge="3D Visualization"
                     title="Wild Fire Scientific Visualization"
@@ -90,6 +102,7 @@ export const AllWork = () => {
                 />
                 {/*Ilender Internship*/}
                 <ProjectCard
+                    index={6}
                     miniTitle="Software Engineering Internship"
                     badge="Ilender"
                     title="Enhancing data processing pipelines"
@@ -100,6 +113,7 @@ export const AllWork = () => {
                 />
                 {/*UFO Sightings Data Visualization*/}
                 <ProjectCard
+                    index={7}
                     miniTitle="UFO Data Visualization"
                     badge="Personal Project"
                     title="Interactive Visualization of UFO Sightings"
@@ -110,6 +124,7 @@ export const AllWork = () => {
                 />
                 {/*Cults of the Carven*/}
                 <ProjectCard
+                    index={8}
                     miniTitle="Cults of the Carven"
                     badge="Game Development Personal Project"
                     title="A dark, horror RPG Experience"
@@ -120,6 +135,7 @@ export const AllWork = () => {
                 />
                 {/*NASA L'SPACE MCA*/}
                 <ProjectCard
+                    index={9}
                     miniTitle="Mission Concept Academy"
                     badge="NASA L'SPACE"
                     title="Designing a conceptual Lunar Rover Mission to explore Tycho Crater."
@@ -131,6 +147,7 @@ export const AllWork = () => {
                 />
                 {/*Minecraft Mechanical Engineering Educational Mod*/}
                 <ProjectCard
+                    index={10}
                     miniTitle="Minecraft Mechanical Engineering Educational Mod"
                     badge="First-Time Engineering Research Fellowship"
                     title="Mod to Teach Statics in Minecraft"
@@ -141,6 +158,6 @@ export const AllWork = () => {
                     link="/Minecraft"
                 />
             </section>
-        </>
+        </motion.div>
     )
 }
