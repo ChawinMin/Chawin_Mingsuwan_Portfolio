@@ -1,5 +1,7 @@
 import MCCVRImage from '../../assets/img/APL/VRAPLMCC.png';
 import AIWorkFlow from '../../assets/img/APL/FinalizedAIDiagram.png';
+import APLPoster from '../../assets/img/APL/APLPoster.pdf';
+import ResearchGroupPhoto from '../../assets/img/APL/ResearchPhoto.jpeg';
 import Youtube from 'react-youtube';
 
 export const APL = () => {
@@ -107,6 +109,20 @@ export const APL = () => {
                         <Youtube videoId={youtubelinkedemo1.split('youtu.be/')[1]} className="youtube-video" opts={{ width: '100%', height: '320' }} />
                     </div>
                 </div>
+
+                <section className="project-overview">
+                    <h2 className='skills-title'>Undergraduate Research Symposium Spring 2026</h2>
+                    <p>
+                        I presented at Purdue's annual <strong>Undergraduate Research Symposium Spring 2026</strong>.
+                        The group that presented is <strong>Chawin Mingsuwan, Avery Dellinger III, Salvador Alvery, Russell Thomas</strong>,
+                        and our mentor from APL, <strong>Jackson Murray</strong>.
+                    </p>
+
+                    <div className="LANL-media">
+                        <img src={ResearchGroupPhoto} alt="LANL Student Symposium Poster" className="XR-poster" />
+                        <iframe title="LANL Student Symposium Lightning Talk" src={APLPoster} className="lanl-slide" loading="lazy" ></iframe>
+                    </div>
+                </section>
             </section>
         </>
     )
