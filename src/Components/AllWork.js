@@ -1,7 +1,7 @@
 import ProjectCard from "./ProjectCard"
 import GatewayColoringImg from "../assets/img/GatewayImg/GatewayColoring.png";
 import LANLImg from "../assets/img/LANL/LANL_3.png";
-import APLImg from "../assets/img/APL/VRAPLMCC.png";
+import APLImg from "../assets/img/APL/VREnvironment/Image3.png";
 import TDEImg from "../assets/img/TDE/TDE_Cover_Photos.png";
 import VRStudyHubImg from "../assets/img/VRStudyHub/VRStudyHub_2.png"
 import IlenderImg from "../assets/img/Ilender/IlenderImg1.png";
@@ -11,6 +11,7 @@ import LSPACEImg from "../assets/img/LSPACE/LSPACEImg1.png";
 import MinecraftImg from "../assets/img/Minecraft/MinecraftImg.jpg";
 import wildFireImg from "../assets/img/wildfire/Final02_img.png";
 import { motion } from "framer-motion";
+import BackgroundAtmosphere from "./BackgroundAtmosphere";
 
 export const AllWork = () => {
     return (
@@ -19,11 +20,14 @@ export const AllWork = () => {
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
             transition={{ duration: 0.5 }}
+            style={{ position: 'relative' }}
         >
-            <section className="all-work" id="work">
-                <p className="section-subtitle">Industry, personal, and resarch</p>
-                <h2 className="section-title">All Work</h2>
-            </section>
+            <BackgroundAtmosphere variant="allwork" />
+            <div style={{ position: "relative", zIndex: 2 }}>
+                <section className="all-work" id="work">
+                    <p className="section-subtitle">Industry, personal, and resarch</p>
+                    <h2 className="section-title">All Work</h2>
+                </section>
 
             <section className="projects-list">
                 {/*JHU APL*/}
@@ -158,6 +162,7 @@ export const AllWork = () => {
                     link="/Minecraft"
                 />
             </section>
+            </div>
         </motion.div>
     )
 }

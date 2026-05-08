@@ -2,12 +2,13 @@ import { useCallback } from "react";
 import Particles from "@tsparticles/react";
 import { loadSlim } from "@tsparticles/slim";
 import { motion } from "framer-motion";
-//import { Typewriter } from 'react-simple-typewriter';
+import { Typewriter } from 'react-simple-typewriter';
+import BackgroundAtmosphere from "./BackgroundAtmosphere";
 import GatewayColoringImg from "../assets/img/GatewayImg/GatewayColoring.png";
 import LANLImg from "../assets/img/LANL/LANL_3.png";
 import TDEImg from "../assets/img/TDE/TDE_Cover_Photos.png";
 import ProjectCard from './ProjectCard';
-import APLImg from "../assets/img/APL/VRAPLMCC.png";
+import APLImg from "../assets/img/APL/VREnvironment/Image3.png";
 
 export const Home = () => {
     const particlesInit = useCallback(async engine => {
@@ -20,7 +21,9 @@ export const Home = () => {
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
             transition={{ duration: 0.4 }}
+            style={{ position: 'relative' }}
         >
+            <BackgroundAtmosphere variant="home" />
             <section className="home" id="home-hero">
                 <div className="hero-glow"></div>
                 <Particles
@@ -40,17 +43,25 @@ export const Home = () => {
                         },
                         detectRetina: true,
                     }}
-                    style={{ position: "absolute", top: 0, left: 0, width: "100%", height: "100%", zIndex: -2 }}
+                    style={{ position: "absolute", top: 0, left: 0, width: "100%", height: "100%", zIndex: 1 }}
                 />
 
-                <div className="hero-content">
+                <div className="hero-content" style={{ position: "relative", zIndex: 2 }}>
                     <motion.p
                         initial={{ y: 10, opacity: 0 }}
                         animate={{ y: 0, opacity: 1 }}
                         transition={{ delay: 0.1, duration: 0.6 }}
                         className="hero-label"
                     >
-                        XR Engineer · Creative Technologist · Software Engineer
+                        <Typewriter
+                            words={['XR Engineer', 'Creative Technologist', 'Software Engineer', 'Human-Centered Designer', 'Astronomer']}
+                            loop={0}
+                            cursor
+                            cursorStyle='|'
+                            typeSpeed={70}
+                            deleteSpeed={50}
+                            delaySpeed={1000}
+                        />
                     </motion.p>
 
                     <motion.h1
@@ -62,16 +73,6 @@ export const Home = () => {
                         Chawin Mingsuwan
                     </motion.h1>
 
-                    <motion.p
-                        initial={{ y: 15, opacity: 0 }}
-                        animate={{ y: 0, opacity: 1 }}
-                        transition={{ delay: 0.3, duration: 0.6 }}
-                        className="hero-statement"
-                    >
-                        I design and build immersive systems for scientific exploration and progress
-                        from NASA mission planning tools to spatial data interfaces
-                        at Los Alamos National Laboratory.
-                    </motion.p>
 
                     <motion.div
                         initial={{ y: 10, opacity: 0 }}
@@ -84,26 +85,11 @@ export const Home = () => {
                     </motion.div>
                 </div>
 
-                <motion.a
-                    href="#featured-start"
-                    className="hero-scroll-cta"
-                    initial={{ opacity: 0 }}
-                    animate={{ opacity: 1 }}
-                    transition={{ delay: 0.8, duration: 0.8 }}
-                    onClick={(e) => {
-                        e.preventDefault();
-                        document.getElementById('featured-start')?.scrollIntoView({ behavior: 'smooth' });
-                    }}
-                >
-                    <span className="scroll-label">View Projects</span>
-                    <span className="scroll-chevron">⌄</span>
-                </motion.a>
-                <div className="hero-bottom-fade"></div>
             </section>
 
             <section className="featured-section" id="featured">
-                <p className="section-subtitle">NASA · Johns Hopkins Applied Physics Laboratory · Los Alamos National Laboratory · Barrios Technology · Astrophysics</p>
                 <h2 className="Feature-title">Featured Projects</h2>
+                <p className="section-subtitle">NASA · Johns Hopkins Applied Physics Laboratory · Los Alamos National Laboratory · Barrios Technology · Astrophysics</p>
 
                 <div id="featured-start" />
 
