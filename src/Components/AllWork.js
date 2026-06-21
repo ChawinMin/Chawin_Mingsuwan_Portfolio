@@ -10,6 +10,7 @@ import CullImg from "../assets/img/Cults of the Carven/RortoImg1.png";
 import LSPACEImg from "../assets/img/LSPACE/LSPACEImg1.png";
 import MinecraftImg from "../assets/img/Minecraft/MinecraftImg.jpg";
 import wildFireImg from "../assets/img/wildfire/Final02_img.png";
+import SUITSImg from "../assets/img/SUITS/Azeem_Ehtisham-Felix-13.jpg";
 import { motion } from "framer-motion";
 import BackgroundAtmosphere from "./BackgroundAtmosphere";
 
@@ -29,139 +30,154 @@ export const AllWork = () => {
                     <h2 className="section-title">All Work</h2>
                 </section>
 
-            <section className="projects-list">
-                {/*JHU APL*/}
-                <ProjectCard
-                    index={0}
-                    miniTitle="NASA JSC Mission Control Center"
-                    badge="JHU APL Sponsor Project"
-                    title="Virtual Reality & Intelligent Agent for NASA JSC Mission Control"
-                    description="Project in Progress: Johns Hopkins Applied Physics Laboratory (JHU APL) in collaboration with IXL to develop an immersive visualization and AI assistant for NASA Johnson Space Center's Mission Control Center. 
+                <section className="projects-list">
+                    {/*JHU APL*/}
+                    <ProjectCard
+                        index={0}
+                        miniTitle="NASA JSC Mission Control Center"
+                        badge="JHU APL Sponsor Project"
+                        title="Virtual Reality & Intelligent Agent for NASA JSC Mission Control"
+                        description="Johns Hopkins Applied Physics Laboratory (JHU APL) in collaboration with IXL to develop an immersive visualization and AI assistant for NASA Johnson Space Center's Mission Control Center. 
                     The project focuses on creating an interactive 3D environment that enhances situational awareness and decision-making for mission controllers, leveraging cutting-edge VR technology and AI-driven insights."
-                    tags={['Unity', 'VR', 'C#', 'AI Integration', 'API', 'Human-Computer Interaction', 'UI/UX Design']}
-                    img= {APLImg}
-                    link="/APL"
-                />
-                {/*GVT*/}
-                <ProjectCard
-                    index={1}
-                    miniTitle="Immersive Mission Planning"
-                    badge="NASA/Barrios Technology"
-                    title="Gateway Visualization Tool"
-                    description="An immersive XR application developed in collaboration with NASA and Barrios Technology to support mission planning and systems understanding for the Lunar Gateway. The tool enables users to explore complex spacecraft modules, 
+                        tags={['Unity', 'VR', 'C#', 'AI Integration', 'API', 'Human-Computer Interaction', 'UI/UX Design']}
+                        img={APLImg}
+                        link="/APL"
+                    />
+                    {/*NASA SUITS*/}
+                    <ProjectCard
+                        index={1}
+                        miniTitle="NASA EVA UI FOR LUNAR AND MARTIANS OPERATIONS"
+                        badge="NASA SUITS Challenge 2026"
+                        title="NASA Spacesuit User-Interface Technologies for Students NASA Design Challenge"
+                        description="NASA SUITS (Spacesuit User Interface Technologies for Students) is a NASA design challenge that tasks university 
+                        teams with developing next-generation mixed reality interfaces for astronauts conducting lunar surface operations. 
+                        As the XR Astronaut Interface Lead for Team VISOR, I led the development of an AI-powered HoloLens 2 system that integrated real-time spacesuit telemetry, 
+                        navigation tools, and voice-based assistance to support astronaut decision-making during simulated Artemis missions."
+                        tags={['Unity', 'VR', 'C#', 'AI Integration', 'Real-Time Telemetry System', 'API', 'Human-Computer Interaction', 'UI/UX Design', 'Halolens 2']}
+                        img={SUITSImg}
+                        link="/SUITS"
+                    />
+
+                    {/*GVT*/}
+                    <ProjectCard
+                        index={2}
+                        miniTitle="Immersive Mission Planning"
+                        badge="NASA/Barrios Technology"
+                        title="Gateway Visualization Tool"
+                        description="An immersive XR application developed in collaboration with NASA and Barrios Technology to support mission planning and systems understanding for the Lunar Gateway. The tool enables users to explore complex spacecraft modules, 
                     spatial relationships, and mission data in a fully interactive 3D environment, enhancing situational awareness and collaborative decision-making."
-                    tags={['VR', 'Unreal Engine', 'Blueprints', 'C++', 'Data Visualization', 'Human-Computer Interaction', 'UI/UX Design']}
-                    img= {GatewayColoringImg}
-                    link="/Gateway"
-                />
-                {/*Los Alamos National Lab*/}
-                <ProjectCard
-                    index={2}
-                    miniTitle="Human-Centered XR Research"
-                    badge="Los Alamos National Laboratory"
-                    title="XR & HPC Internship"
-                    description="A human-centered XR research project at Los Alamos National Laboratory exploring spatial data interaction on Apple Vision Pro. 
+                        tags={['VR', 'Unreal Engine', 'Blueprints', 'C++', 'Data Visualization', 'Human-Computer Interaction', 'UI/UX Design']}
+                        img={GatewayColoringImg}
+                        link="/Gateway"
+                    />
+                    {/*Los Alamos National Lab*/}
+                    <ProjectCard
+                        index={3}
+                        miniTitle="Human-Centered XR Research"
+                        badge="Los Alamos National Laboratory"
+                        title="XR & HPC Internship"
+                        description="A human-centered XR research project at Los Alamos National Laboratory exploring spatial data interaction on Apple Vision Pro. 
                     The work investigates how immersive interfaces and natural interaction techniques can improve data comprehension, analysis, and decision-making in complex scientific and engineering contexts."
-                    tags={['VR', 'Apple Vision Pro', 'Unreal Engine', 'Blueprints','C++', 'Human-Computer Interaction', 'UI/UX Design']}
-                    img= {LANLImg}
-                    link="/LANL"
-                />
-                {/*TDE*/}
-                <ProjectCard
-                    index={3}
-                    miniTitle="Tidal Disruption Event"
-                    badge="Astrophysics Computational Research"
-                    title="Search for Tidal Disruption Events in ZTF Data"
-                    description="A data-driven astrophysics research project focused on identifying and analyzing Tidal Disruption Events (TDEs) using data from the Zwicky Transient Facility (ZTF). 
+                        tags={['VR', 'Apple Vision Pro', 'Unreal Engine', 'Blueprints', 'C++', 'Human-Computer Interaction', 'UI/UX Design']}
+                        img={LANLImg}
+                        link="/LANL"
+                    />
+                    {/*TDE*/}
+                    <ProjectCard
+                        index={4}
+                        miniTitle="Tidal Disruption Event"
+                        badge="Astrophysics Computational Research"
+                        title="Search for Tidal Disruption Events in ZTF Data"
+                        description="A data-driven astrophysics research project focused on identifying and analyzing Tidal Disruption Events (TDEs) using data from the Zwicky Transient Facility (ZTF). 
                     The project employs machine learning techniques and statistical analysis to detect TDE signatures, contributing to our understanding of black hole physics and stellar dynamics."
-                    tags={['Data Visualization', 'Python', 'Pandas', 'FastAPI', 'UI/UX Design', 'Physics', 'ML']}
-                    img= {TDEImg}
-                    link="/TDE"
-                />
-                {/*Virtual Reality Study Hub*/}
-                <ProjectCard
-                    index={4}
-                    miniTitle="Virtual Reality Study Hub"
-                    badge="Educational Technology"
-                    title="Immersive Learning Environment in VR"
-                    description="An immersive learning environment developed in VR for educational purposes. The project explores how virtual reality can enhance student engagement and comprehension in complex subjects, particularly in STEM fields."
-                    tags={['VR', 'Unity', 'C#', 'Educational Technology', 'UI/UX Design', 'Human-Computer Interaction']}
-                    img= {VRStudyHubImg}
-                    link="/VRStudyHub"
-                />
-                {/*Wild Fire Scientific Visualization*/}
-                <ProjectCard
-                    index={5}
-                    miniTitle="Scientific Visualization"
-                    badge="3D Visualization"
-                    title="Wild Fire Scientific Visualization"
-                    description="A ParaView-based visualization of the LANL wildfire 
+                        tags={['Data Visualization', 'Python', 'Pandas', 'FastAPI', 'UI/UX Design', 'Physics', 'ML']}
+                        img={TDEImg}
+                        link="/TDE"
+                    />
+                    {/*Virtual Reality Study Hub*/}
+                    <ProjectCard
+                        index={5}
+                        miniTitle="Virtual Reality Study Hub"
+                        badge="Educational Technology"
+                        title="Immersive Learning Environment in VR"
+                        description="An immersive learning environment developed in VR for educational purposes. The project explores how virtual reality can enhance student engagement and comprehension in complex subjects, particularly in STEM fields."
+                        tags={['VR', 'Unity', 'C#', 'Educational Technology', 'UI/UX Design', 'Human-Computer Interaction']}
+                        img={VRStudyHubImg}
+                        link="/VRStudyHub"
+                    />
+                    {/*Wild Fire Scientific Visualization*/}
+                    <ProjectCard
+                        index={6}
+                        miniTitle="Scientific Visualization"
+                        badge="3D Visualization"
+                        title="Wild Fire Scientific Visualization"
+                        description="A ParaView-based visualization of the LANL wildfire 
                     dataset, showing fuel distribution, fire intensity, 
                     smoke, and wind vectors to illustrate how the fire evolves over time.
                     Includes contour filters for thresholding, streamlines for 
                     flow paths, and a programmable filter for custom analysis."
-                    tags={['ParaView', 'Python']}
-                    img= {wildFireImg}
-                    link="/WildFire"
-                />
-                {/*Ilender Internship*/}
-                <ProjectCard
-                    index={6}
-                    miniTitle="Software Engineering Internship"
-                    badge="Ilender"
-                    title="Enhancing data processing pipelines"
-                    description="A software engineering internship focused on enhancing data processing pipelines for improved efficiency and reliability. The project involved developing and optimizing algorithms to handle large datasets, contributing to the overall performance of the company's data infrastructure."
-                    tags={['Python', 'Data Processing', 'Software Engineering', 'ML']}
-                    img= {IlenderImg}
-                    link="/Ilender"
-                />
-                {/*UFO Sightings Data Visualization*/}
-                <ProjectCard
-                    index={7}
-                    miniTitle="UFO Data Visualization"
-                    badge="Personal Project"
-                    title="Interactive Visualization of UFO Sightings"
-                    description="An interactive visualization project for UFO sightings data. The project explores how data visualization can be used to analyze and present UFO sighting reports, contributing to our understanding of patterns and trends in reported phenomena."
-                    tags={['Data Visualization', 'Python', 'Pandas', 'UI/UX Design']}
-                    img= {UFOImg}
-                    link="/UFO"
-                />
-                {/*Cults of the Carven*/}
-                <ProjectCard
-                    index={8}
-                    miniTitle="Cults of the Carven"
-                    badge="Game Development Personal Project"
-                    title="A dark, horror RPG Experience"
-                    description="A dark horror RPG game developed as a personal project. The game combines atmospheric storytelling, challenging gameplay, and immersive environments to create a compelling horror experience."
-                    tags={['Unreal Engine', 'Blueprints', 'C++', 'Game Design', 'Sound Design','Level Design','UI/UX Design']}
-                    img={CullImg}
-                    link="/Cull"
-                />
-                {/*NASA L'SPACE MCA*/}
-                <ProjectCard
-                    index={9}
-                    miniTitle="Mission Concept Academy"
-                    badge="NASA L'SPACE"
-                    title="Designing a conceptual Lunar Rover Mission to explore Tycho Crater."
-                    description="NASA L'SPACE is a competitive, NASA-sponsored academy designed for university students interested in gaining real-world experience in space exploration and project management. 
+                        tags={['ParaView', 'Python']}
+                        img={wildFireImg}
+                        link="/WildFire"
+                    />
+                    {/*Ilender Internship*/}
+                    <ProjectCard
+                        index={7}
+                        miniTitle="Software Engineering Internship"
+                        badge="Ilender"
+                        title="Enhancing data processing pipelines"
+                        description="A software engineering internship focused on enhancing data processing pipelines for improved efficiency and reliability. The project involved developing and optimizing algorithms to handle large datasets, contributing to the overall performance of the company's data infrastructure."
+                        tags={['Python', 'Data Processing', 'Software Engineering', 'ML']}
+                        img={IlenderImg}
+                        link="/Ilender"
+                    />
+                    {/*UFO Sightings Data Visualization*/}
+                    <ProjectCard
+                        index={8}
+                        miniTitle="UFO Data Visualization"
+                        badge="Personal Project"
+                        title="Interactive Visualization of UFO Sightings"
+                        description="An interactive visualization project for UFO sightings data. The project explores how data visualization can be used to analyze and present UFO sighting reports, contributing to our understanding of patterns and trends in reported phenomena."
+                        tags={['Data Visualization', 'Python', 'Pandas', 'UI/UX Design']}
+                        img={UFOImg}
+                        link="/UFO"
+                    />
+                    {/*Cults of the Carven*/}
+                    <ProjectCard
+                        index={9}
+                        miniTitle="Cults of the Carven"
+                        badge="Game Development Personal Project"
+                        title="A dark, horror RPG Experience"
+                        description="A dark horror RPG game developed as a personal project. The game combines atmospheric storytelling, challenging gameplay, and immersive environments to create a compelling horror experience."
+                        tags={['Unreal Engine', 'Blueprints', 'C++', 'Game Design', 'Sound Design', 'Level Design', 'UI/UX Design']}
+                        img={CullImg}
+                        link="/Cull"
+                    />
+                    {/*NASA L'SPACE MCA*/}
+                    <ProjectCard
+                        index={10}
+                        miniTitle="Mission Concept Academy"
+                        badge="NASA L'SPACE"
+                        title="Designing a conceptual Lunar Rover Mission to explore Tycho Crater."
+                        description="NASA L'SPACE is a competitive, NASA-sponsored academy designed for university students interested in gaining real-world experience in space exploration and project management. 
                     Participants work in teams to solve real NASA challenges, learn about NASA's processes, and develop skills in leadership, collaboration, and innovation. It's a hands-on opportunity to engage in mission-related projects and prepare for careers in the space industry."
-                    tags={['Mission Design', 'Computer Engineering', 'Leadership', 'Multi-disciplinary Collaboration','Lunar Exploration', 'Systems Engineering']}
-                    img={LSPACEImg}
-                    link="/LSPACE"
-                />
-                {/*Minecraft Mechanical Engineering Educational Mod*/}
-                <ProjectCard
-                    index={10}
-                    miniTitle="Minecraft Mechanical Engineering Educational Mod"
-                    badge="First-Time Engineering Research Fellowship"
-                    title="Mod to Teach Statics in Minecraft"
-                    description="A Minecraft mod developed to teach principles of statics and mechanical engineering. The mod provides an interactive platform for students to explore engineering concepts through gameplay, enhancing learning outcomes in STEM education. 
+                        tags={['Mission Design', 'Computer Engineering', 'Leadership', 'Multi-disciplinary Collaboration', 'Lunar Exploration', 'Systems Engineering']}
+                        img={LSPACEImg}
+                        link="/LSPACE"
+                    />
+                    {/*Minecraft Mechanical Engineering Educational Mod*/}
+                    <ProjectCard
+                        index={11}
+                        miniTitle="Minecraft Mechanical Engineering Educational Mod"
+                        badge="First-Time Engineering Research Fellowship"
+                        title="Mod to Teach Statics in Minecraft"
+                        description="A Minecraft mod developed to teach principles of statics and mechanical engineering. The mod provides an interactive platform for students to explore engineering concepts through gameplay, enhancing learning outcomes in STEM education. 
                     This project was developed as part of a First-Time Engineering Research Fellowship and was presented at the 2024 Spring Research Symposium."
-                    tags={['Java', 'Quality & Assurance','Minecraft Modding', 'Mechanical Engineering', 'Educational Technology', 'UI/UX Design']}
-                    img= {MinecraftImg}
-                    link="/Minecraft"
-                />
-            </section>
+                        tags={['Java', 'Quality & Assurance', 'Minecraft Modding', 'Mechanical Engineering', 'Educational Technology', 'UI/UX Design']}
+                        img={MinecraftImg}
+                        link="/Minecraft"
+                    />
+                </section>
             </div>
         </motion.div>
     )

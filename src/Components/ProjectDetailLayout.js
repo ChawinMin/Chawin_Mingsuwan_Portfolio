@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 
 const PROJECT_ORDER = [
     { path: "/APL", title: "VR & Intelligent Agent", subtitle: "JHU APL" },
+    { path: "/SUITS", title: "NASA SUITS Challenge", subtitle: "NASA" },
     { path: "/Gateway", title: "Gateway Visualization Tool", subtitle: "NASA / Barrios" },
     { path: "/LANL", title: "XR & HPC Internship", subtitle: "Los Alamos" },
     { path: "/TDE", title: "Tidal Disruption Events", subtitle: "Astrophysics" },

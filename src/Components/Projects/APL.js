@@ -18,6 +18,7 @@ import ResearchGroupPhoto from '../../assets/img/APL/ResearchPhoto.jpeg';
 // Project order for footer navigation
 const PROJECT_ORDER = [
     { path: "/APL", title: "VR & Intelligent Agent", subtitle: "JHU APL" },
+    { path: "/SUITS", title: "NASA SUITS Challenge", subtitle: "NASA SUITS" },
     { path: "/Gateway", title: "Gateway Visualization Tool", subtitle: "NASA / Barrios" },
     { path: "/LANL", title: "XR & HPC Internship", subtitle: "Los Alamos" },
     { path: "/TDE", title: "Tidal Disruption Events", subtitle: "Astrophysics" },
@@ -39,6 +40,13 @@ export const APL = () => {
     const scrollToContent = () => {
         document.getElementById('apl-overview').scrollIntoView({ behavior: 'smooth' });
     };
+
+    const metadata = [
+        { label: "Role", value: "Technical Lead, XR & AI Systems" },
+        { label: "Organization", value: "Johns Hopkins APL / Sponsor" },
+        { label: "Timeline", value: "Oct 2025 – May 2026" },
+        { label: "Team", value: "APL Research Team / Team IXL" }
+    ];
 
     return (
         <div className="apl-case-study">
@@ -77,6 +85,25 @@ export const APL = () => {
             </section>
 
             <div className="apl-body">
+
+                {/* METADATA STRIP */}
+                <section className="apl-section apl-section--meta">
+                    <motion.div
+                        className="apl-container pd-meta-strip"
+                        initial={{ opacity: 0, y: 12 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        viewport={{ once: true }}
+                        transition={{ duration: 0.5 }}
+                    >
+                        {metadata.map((m, i) => (
+                            <div className="pd-meta-card apl-feature-card" key={i}>
+                                <span className="pd-meta-label">{m.label}</span>
+                                <span className="pd-meta-value">{m.value}</span>
+                            </div>
+                        ))}
+                    </motion.div>
+                </section>
+
                 {/* 2. PROJECT OVERVIEW SECTION */}
                 <section id="apl-overview" className="apl-section">
                     <div className="apl-container">

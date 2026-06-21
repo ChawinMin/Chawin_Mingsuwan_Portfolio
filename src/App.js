@@ -14,6 +14,7 @@ import { Cull } from './Components/Projects/Cull';
 import { LSPACE } from './Components/Projects/LSPACE';
 import { Minecraft } from './Components/Projects/Minecraft';
 import { WildFire } from './Components/Projects/WildFire';
+import { SUITS } from './Components/Projects/SUITS';
 import UpScroll from './Components/UpScroll';
 import { Footer } from './Components/Footer';
 import { Routes, Route, useLocation } from 'react-router-dom';
@@ -24,7 +25,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 function App() {
   const location = useLocation();
   return (
-    <div className = "App">
+    <div className="App">
       <NavBar />
       <ScrollToHash />
 
@@ -44,6 +45,7 @@ function App() {
           <Route path="/LSPACE" element={<LSPACE />} />
           <Route path="/Minecraft" element={<Minecraft />} />
           <Route path="/WildFire" element={<WildFire />} />
+          <Route path="/SUITS" element={<SUITS />} />
         </Routes>
       </AnimatePresence>
 

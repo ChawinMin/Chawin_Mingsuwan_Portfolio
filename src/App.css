@@ -2197,20 +2197,27 @@ nav.navbar .navbar-toggler-icon:after {
 
 .apl-hero-bg {
   position: absolute;
-  top: 0; left: 0; width: 100%; height: 100%;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
   z-index: 1;
 }
 
 .apl-hero-bg img {
-  width: 100%; height: 100%;
+  width: 100%;
+  height: 100%;
   object-fit: cover;
   object-position: center;
 }
 
 .apl-hero-overlay {
   position: absolute;
-  top: 0; left: 0; width: 100%; height: 100%;
-  background: linear-gradient(to bottom, rgba(0,0,0,0.3) 0%, rgba(0,0,0,0.8) 70%, var(--c-bg) 100%);
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.8) 70%, var(--c-bg) 100%);
 }
 
 .apl-hero-content {
@@ -2327,13 +2334,14 @@ nav.navbar .navbar-toggler-icon:after {
   color: rgba(255, 255, 255, 0.75);
   line-height: 1.8;
   margin-bottom: var(--sp-4);
+  text-align: left;
 }
 
 .apl-large-text {
   font-size: var(--fs-lg);
   color: rgba(255, 255, 255, 0.9);
   line-height: 1.6;
-  max-width: 900px;
+  text-align: left;
 }
 
 .apl-feature-grid {
@@ -2385,7 +2393,7 @@ nav.navbar .navbar-toggler-icon:after {
 .apl-rounded-img {
   width: 100%;
   border-radius: var(--radius-lg);
-  box-shadow: 0 20px 40px rgba(0,0,0,0.5);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
   border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
@@ -2416,20 +2424,27 @@ nav.navbar .navbar-toggler-icon:after {
 
 .apl-final-bg {
   position: absolute;
-  top: 0; left: 0; width: 100%; height: 100%;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
   z-index: 1;
 }
 
 .apl-final-bg img {
-  width: 100%; height: 100%;
+  width: 100%;
+  height: 100%;
   object-fit: cover;
   filter: brightness(0.4) saturate(0.8);
 }
 
 .apl-final-overlay {
   position: absolute;
-  top: 0; left: 0; width: 100%; height: 100%;
-  background: radial-gradient(circle, rgba(0,0,0,0.3) 0%, var(--c-bg) 100%);
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(circle, rgba(0, 0, 0, 0.3) 0%, var(--c-bg) 100%);
 }
 
 .apl-final-content {
@@ -2509,12 +2524,12 @@ nav.navbar .navbar-toggler-icon:after {
   padding: var(--sp-6);
 }
 
-.apl-body > .pd-section {
+.apl-body>.pd-section {
   margin-bottom: 0;
   background: transparent;
 }
 
-.apl-body > .pd-section:nth-of-type(even) {
+.apl-body>.pd-section:nth-of-type(even) {
   background: rgba(255, 255, 255, 0.02);
   border-top: 1px solid rgba(255, 255, 255, 0.05);
   border-bottom: 1px solid rgba(255, 255, 255, 0.05);
