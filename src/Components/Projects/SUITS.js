@@ -14,8 +14,8 @@ import SUITSImg6 from '../../assets/img/SUITS/jsc2026e042707.jpg';
 import SUITSUIScreenshot from '../../assets/img/SUITS/NASAHaloLensUI.png';
 import SUITSPoster from '../../assets/img/SUITS/NASA SUITS VISOR Poster.pdf';
 import SUITSDiagram from '../../assets/img/SUITS/VISORTeamDiagram.png';
-import FlightDirectorImg from '../../assets/img/SUITS/FlightDirectorImg.png';
-import CAPCOMimg from '../../assets/img/SUITS/CAPCOMDiagramImg.png';
+// import FlightDirectorImg from '../../assets/img/SUITS/FlightDirectorImg.png';
+// import CAPCOMimg from '../../assets/img/SUITS/CAPCOMDiagramImg.png';
 
 // Additional Rock Yard testing photos
 import SUITSRockYard1 from '../../assets/img/SUITS/Azeem_Ehtisham-Felix-14.jpg';
@@ -244,7 +244,7 @@ export const SUITS = () => {
                         </p>
 
                     </div>
-
+                    {/*
                     <div className="apl-container">
                         <h2 className="apl-section-title">Mission Control Center</h2>
                         <ImageGallery
@@ -255,6 +255,7 @@ export const SUITS = () => {
                             columns={1}
                         />
                     </div>
+                    */}
 
                 </section>
 
