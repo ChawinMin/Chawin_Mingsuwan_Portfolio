@@ -11,6 +11,7 @@ import LSPACEImg from "../assets/img/LSPACE/LSPACEImg1.png";
 import MinecraftImg from "../assets/img/Minecraft/MinecraftImg.jpg";
 import wildFireImg from "../assets/img/wildfire/Final02_img.png";
 import SUITSImg from "../assets/img/SUITS/Azeem_Ehtisham-Felix-13.jpg";
+import MSFCImg from "../assets/img/MSFC/LEVRCoverImage.png";
 import { motion } from "framer-motion";
 import BackgroundAtmosphere from "./BackgroundAtmosphere";
 
@@ -58,9 +59,21 @@ export const AllWork = () => {
                         link="/SUITS"
                     />
 
-                    {/*GVT*/}
+                    {/*NASA MSFC*/}
                     <ProjectCard
                         index={2}
+                        miniTitle="Immersive Lunar Simulation"
+                        badge="NASA Marshall Space Flight Center"
+                        title="Lunar Environment in Virtual Reality (LEVR)"
+                        description="An XR application developed in collaboration with NASA Marshall Space Flight Center to support mission planning and systems understanding for the lunar environment. And it a public demonstration of the Human-Landing System (HLS)."
+                        tags={['Unreal Engine 5', 'VR', 'C++', 'Blueprints', 'Meta Quest 3', 'Hand Tracking', 'Human Factors', 'Blueprints']}
+                        img={MSFCImg}
+                        link="/MSFC"
+                    />
+
+                    {/*GVT*/}
+                    <ProjectCard
+                        index={3}
                         miniTitle="Immersive Mission Planning"
                         badge="NASA/Barrios Technology"
                         title="Gateway Visualization Tool"
@@ -72,7 +85,7 @@ export const AllWork = () => {
                     />
                     {/*Los Alamos National Lab*/}
                     <ProjectCard
-                        index={3}
+                        index={4}
                         miniTitle="Human-Centered XR Research"
                         badge="Los Alamos National Laboratory"
                         title="XR & HPC Internship"
@@ -84,7 +97,7 @@ export const AllWork = () => {
                     />
                     {/*TDE*/}
                     <ProjectCard
-                        index={4}
+                        index={5}
                         miniTitle="Tidal Disruption Event"
                         badge="Astrophysics Computational Research"
                         title="Search for Tidal Disruption Events in ZTF Data"
@@ -96,7 +109,7 @@ export const AllWork = () => {
                     />
                     {/*Virtual Reality Study Hub*/}
                     <ProjectCard
-                        index={5}
+                        index={6}
                         miniTitle="Virtual Reality Study Hub"
                         badge="Educational Technology"
                         title="Immersive Learning Environment in VR"
@@ -107,7 +120,7 @@ export const AllWork = () => {
                     />
                     {/*Wild Fire Scientific Visualization*/}
                     <ProjectCard
-                        index={6}
+                        index={7}
                         miniTitle="Scientific Visualization"
                         badge="3D Visualization"
                         title="Wild Fire Scientific Visualization"
@@ -122,7 +135,7 @@ export const AllWork = () => {
                     />
                     {/*Ilender Internship*/}
                     <ProjectCard
-                        index={7}
+                        index={8}
                         miniTitle="Software Engineering Internship"
                         badge="Ilender"
                         title="Enhancing data processing pipelines"
@@ -133,7 +146,7 @@ export const AllWork = () => {
                     />
                     {/*UFO Sightings Data Visualization*/}
                     <ProjectCard
-                        index={8}
+                        index={9}
                         miniTitle="UFO Data Visualization"
                         badge="Personal Project"
                         title="Interactive Visualization of UFO Sightings"
@@ -144,7 +157,7 @@ export const AllWork = () => {
                     />
                     {/*Cults of the Carven*/}
                     <ProjectCard
-                        index={9}
+                        index={10}
                         miniTitle="Cults of the Carven"
                         badge="Game Development Personal Project"
                         title="A dark, horror RPG Experience"
@@ -155,7 +168,7 @@ export const AllWork = () => {
                     />
                     {/*NASA L'SPACE MCA*/}
                     <ProjectCard
-                        index={10}
+                        index={11}
                         miniTitle="Mission Concept Academy"
                         badge="NASA L'SPACE"
                         title="Designing a conceptual Lunar Rover Mission to explore Tycho Crater."
@@ -167,7 +180,7 @@ export const AllWork = () => {
                     />
                     {/*Minecraft Mechanical Engineering Educational Mod*/}
                     <ProjectCard
-                        index={11}
+                        index={12}
                         miniTitle="Minecraft Mechanical Engineering Educational Mod"
                         badge="First-Time Engineering Research Fellowship"
                         title="Mod to Teach Statics in Minecraft"

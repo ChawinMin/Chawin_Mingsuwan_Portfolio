@@ -10,6 +10,7 @@ import TDEImg from "../assets/img/TDE/TDE_Cover_Photos.png";
 import ProjectCard from './ProjectCard';
 import APLImg from "../assets/img/APL/VREnvironment/Image3.png";
 import SUITSImg from "../assets/img/SUITS/Azeem_Ehtisham-Felix-13.jpg";
+import MSFCImg from "../assets/img/MSFC/LEVRCoverImage.png";
 
 export const Home = () => {
     const particlesInit = useCallback(async engine => {
@@ -122,12 +123,24 @@ export const Home = () => {
                         img={SUITSImg}
                         link="/SUITS"
                     />
+
+                    {/*NASA MSFC*/}
+                    <ProjectCard
+                        index={2}
+                        miniTitle="Immersive Lunar Simulation"
+                        badge="NASA Marshall Space Flight Center"
+                        title="Lunar Environment in Virtual Reality (LEVR)"
+                        description="An XR application developed in collaboration with NASA Marshall Space Flight Center to support mission planning and systems understanding for the lunar environment. And it a public demonstration of the Human-Landing System (HLS)."
+                        tags={['Unreal Engine 5', 'VR', 'C++', 'Blueprints', 'Meta Quest 3', 'Hand Tracking', 'Human Factors', 'Blueprints']}
+                        img={MSFCImg}
+                        link="/MSFC"
+                    />
                 </div>
 
                 <div className="projects-grid projects-grid--2col">
                     {/* Side-by-side cards */}
                     <ProjectCard
-                        index={2}
+                        index={3}
                         miniTitle="Immersive Mission Planning"
                         badge="NASA/Barrios Technology"
                         title="Gateway Visualization Tool"
@@ -138,7 +151,7 @@ export const Home = () => {
                         link="/Gateway"
                     />
                     <ProjectCard
-                        index={3}
+                        index={4}
                         miniTitle="Human-Centered XR Research"
                         badge="Los Alamos National Laboratory"
                         title="XR & HPC Internship"
@@ -153,7 +166,7 @@ export const Home = () => {
                 <div className="projects-grid projects-grid--home">
                     {/* Full-width bottom card */}
                     <ProjectCard
-                        index={4}
+                        index={5}
                         miniTitle="Tidal Disruption Event"
                         badge="Astrophysics Computational Research"
                         title="Search for Tidal Disruption Events in ZTF Data"

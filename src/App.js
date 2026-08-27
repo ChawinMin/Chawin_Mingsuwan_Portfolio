@@ -15,6 +15,7 @@ import { LSPACE } from './Components/Projects/LSPACE';
 import { Minecraft } from './Components/Projects/Minecraft';
 import { WildFire } from './Components/Projects/WildFire';
 import { SUITS } from './Components/Projects/SUITS';
+import { MSFC } from './Components/Projects/MSFC';
 import UpScroll from './Components/UpScroll';
 import { Footer } from './Components/Footer';
 import { Routes, Route, useLocation } from 'react-router-dom';
@@ -46,6 +47,7 @@ function App() {
           <Route path="/Minecraft" element={<Minecraft />} />
           <Route path="/WildFire" element={<WildFire />} />
           <Route path="/SUITS" element={<SUITS />} />
+          <Route path="/MSFC" element={<MSFC />} />
         </Routes>
       </AnimatePresence>
 
